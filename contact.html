@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="multipagesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+        <title>Multi-Page Project</title>
+    </head>
+
+<body>
+    <div class="topnav">
+        <a id="logo" href="#logo">Logo</a>
+        <a class="navbtn" class="active" href="home.html">Home</a>
+        <a class="navbtn" href="portfolio.html">Portfolio</a>
+        <a class="navbtn" href="contact.html">Contact</a>
+        <a class="navbtn" href="aboutme.html">About Me</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" name="search">
+            <input id="button" type="image" src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png" alt="searchicon" width="38" height="32.47"/>
+            </form>
+        </div>
+        <div class="rightnav">
+            <p class="toprow">
+                <a id="s" href="#signin">Sign In/</a><a href id="d"="#dealer">Dealer Locator</a>
+            </p>
+            <p class="bottomrow">
+                <a id="v" href="#viewcart">View Cart</a>
+                <input id="image" type="image" src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="carticon" width="26" height="20"/>
+            </p>
+        </div>
+    </div>
+
+    <div class="contactbody">
+        <h1>Contact</h1>
+        <p>
+            &nbsp; Email: tkawamura02@gmail.com <br>
+            &nbsp; Linkedin: https://www.linkedin.com/in/tiffanykawamura/ <br>
+            &nbsp; Phone: +1 (808) 205-4826 <br>
+        </p>
+        <hr>
+        <h3 style="color: red;">Contact Form</h3>
+        <div class="container">
+            <form action="action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <h3>Tiffany's Website</h3>
+        <p>This is a website where I practice general skills using web design with only
+            HTML and CSS. This is to build my strengths on just these coding "languages" and 
+            become a better developer overall.
+        </p>
+        <div class="footer-bottom">
+        </div>
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+           </div>
+    </div>
+</footer>
+</html>

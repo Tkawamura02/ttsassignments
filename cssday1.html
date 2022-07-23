@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Playground</title>
+        <!-- There are 3 ways we can style things-->
+        <!-- 1. Using a style property...
+                This is called INLINE STYLING.       
+                When you use a style property you are doing INLINE styling.
+            2. The second way we can apply styles is with a style html element, 
+            putting the style information inside the element. 
+            This is called INTERNAL STYLING.
+            3. The third way we can apply styles is with a link
+            to an external style sheet
+        -->
+        <style>
+            /* Inside style, we can start comments with "slash star" and we close
+            comment with star slash 
+            The language inside a style block switches from HTML to CSS */
+
+            /*Internal Styling*/
+
+            /* universal selector example */
+            * {
+                color: red;
+            }
+
+            /* element selectors */
+            h2 {
+                color: green;
+            }
+
+            /* id selector (id is unique for the entire document)*/
+            #todo-heading {
+                font-size: 64px;
+            }
+            #par2 {
+                color: blue;
+            }
+            /* It is useful to have some sort of labelling system to multiple elements
+             *"class labeling": an element in an html doc can be marked as 
+             *belonging to multiple classes
+             */
+
+            /* class selector "." */
+            /* as many elements as you want can have the same class */
+            .important {
+                text-decoration: underline;
+            }
+            .big {
+                font-size: 35px;
+            }
+
+            /* combinator selectors */
+            /* is you can list multiple items
+             *on one line
+             */
+             #div h2 {
+                color: red;
+             }
+ 
+             /* Multiple Selector */
+             /* You can list multiple selectors,
+              * but if you separate them with commas rather than spaces
+              * there are different meanings (means: and)
+             */
+             div h2, #todo-heading {
+                color: blue;
+             }
+
+             /* Pseudo-class selector */
+             /* unvisitied link */
+             #machine-learn-link:link {
+                color: green;
+             }
+             /*visited link */
+             #machine-learn-link:visited {
+                color: gray;
+             }
+             /*mouse over link */
+             #machine-learn-link:hover {
+                color: red;
+             }
+             /*selected link */
+             #machine-learn-link:active {
+                color: yellow;
+             }
+
+
+        </style>
+        <!--Example of external styling-->
+        <link rel="stylesheet" type="text/css" href="mystylesheet.css"/>
+    </head>
+    <body>
+        <div>
+            <h1>The Web Page With Style</h1>
+        </div>
+        <div>
+            <h2>It is nice to be able to style stuff</h2>
+            <p class="important">This is a paragraph</p>
+            <h2>Another heading</h2>
+            <p id="par2" class="big">Another paragraph</p>
+            <a href="https://www.reddit.com/r/learnmachinelearning"> Link to Reddit Machine Learning Page</a>
+        </div>
+
+        <div id="todo-list">
+            <h2 id="todo-header">To Do list:</h2>
+            <ul>
+                <li class="big">Take out garbage</li>
+                <li class="important">Walk dog</li>
+                <li>Do homework</li>
+            </ul>
+        </div>
+
+    </body>
+</html>
